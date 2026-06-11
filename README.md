@@ -7,10 +7,10 @@ A management system for books and library members built on a FASTAPI server with
 ## how to run MySql on docker
 ### The code for creating and run a docker container with MySql
 ```
-docker run --name mysql
-    -e MYSQL_ROOT_PASSWORD = <your password>
-    -e MYSQL_DATABASE = library_db
-    -p 3306:3306
+docker run --name mysql \
+    -e MYSQL_ROOT_PASSWORD = <your password> \
+    -e MYSQL_DATABASE = library_db \
+    -p 3306:3306 \
     -d mysql:8
 ```
 ### to run the container if it exist
